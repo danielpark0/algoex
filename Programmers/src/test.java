@@ -1,15 +1,15 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
-public class test {
-
-	public static void main(String[] args) throws Exception{
-		float a = (float) 10/2;
-		int b = 5;
-		int t1 = 100000000;
-		int t2 = 101001928;
-		long c = (long) t2*t2;
-		System.out.println(c);
+class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int T = Integer.parseInt(br.readLine());
+		for(int i = 0; i < T; i++){
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			Long N = Long.parseLong(st.nextToken());
+			Long M = Long.parseLong(st.nextToken());
+			System.out.println(N+M);
+		}
 	}
-	
 }
