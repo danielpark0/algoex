@@ -10,6 +10,9 @@ import java.util.*;
 public class balancedsystemfilespartition {
 	
 	public static int mostBalancedPartition(List<Integer> parent, List<Integer> files_size) {
+		
+		ArrayList<Integer> list = new ArrayList<>();
+		list.get(list.size()-1);
 	    // Write your code here
 	        int n = parent.size();
 	        int [] segTree = new int [n];
