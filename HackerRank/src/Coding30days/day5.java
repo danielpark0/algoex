@@ -9,10 +9,10 @@ public class day5 {
 
 }
 
-class Person{
+class Person1{
 	private int age;	
 	  
-	public Person(int initialAge) {
+	public Person1(int initialAge) {
   		// Add some more code to run some checks on initialAge
         if(initialAge<0){
             age = 0;
