@@ -10,9 +10,21 @@ import java.util.regex.*;
 class Difference {
   	private int[] elements;
   	public int maximumDifference;
-
+    
 	// Add your code here
-
+    public Difference(int [] a){
+        this.elements = a;
+    }
+    
+    void computeDifference(){
+        int min = 100;
+        int max = 1;
+        for(int e: elements){
+            if(e<min) min = e;
+            if(e>max) max = e;
+        }
+        maximumDifference = Math.abs(max - min);
+    }
 } // End of Difference class
 
 public class day15 {
