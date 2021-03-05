@@ -21,16 +21,20 @@ class Result {
 
     public static int countingValleys(int steps, String path) {
     // Write your code here
-        int cnt = 1;
+        int lv = 0;
+        int answer = 0;
         for(int i = 0; i < steps; i++){
             if(path.charAt(i)=='U'){
-                cnt++;
+                lv++;
+                if(lv==0){
+                    answer++;
+                }
             }
             else{
-                cnt--;
+                lv--;
             }
         }
-        return cnt;
+        return answer;
     }
 
 }
