@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-class Result {
+class Result1 {
 
     /*
      * Complete the 'countingValleys' function below.
@@ -21,20 +21,16 @@ class Result {
 
     public static int countingValleys(int steps, String path) {
     // Write your code here
-        int lv = 0;
-        int answer = 0;
+        int cnt = 1;
         for(int i = 0; i < steps; i++){
             if(path.charAt(i)=='U'){
-                lv++;
-                if(lv==0){
-                    answer++;
-                }
+                cnt++;
             }
             else{
-                lv--;
+                cnt--;
             }
         }
-        return answer;
+        return cnt;
     }
 
 }
@@ -48,7 +44,7 @@ public class countingvalley {
 
         String path = bufferedReader.readLine();
 
-        int result = Result.countingValleys(steps, path);
+        int result = Result1.countingValleys(steps, path);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
